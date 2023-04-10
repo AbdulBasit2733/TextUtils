@@ -1,0 +1,29 @@
+[33mcommit 079cabccf88a134f0e8f54081c1eb15ee781b8c5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: AbdulBasit <abdulbasitkhan2733@gmail.com>
+Date:   Mon Apr 10 09:40:18 2023 +0530
+
+    Adding More Buttons And Functions to TextUtils
+
+[33mcommit 378bd74b2477b6b5ef6fa458aa693bb01c142790[m
+Author: AbdulBasit <abdulbasitkhan2733@gmail.com>
+Date:   Mon Apr 10 08:36:07 2023 +0530
+
+    Adding Logic To TextUtils
+
+[33mcommit e97802e96c440b84e5eecd04cb156f0c8ebf9cf2[m
+Author: AbdulBasit <abdulbasitkhan2733@gmail.com>
+Date:   Sun Apr 9 22:12:18 2023 +0530
+
+    State And Handling Events In React
+
+[33mcommit bf486ccf4a91732cf3a04cca057263b3c16a6968[m
+Author: AbdulBasit <abdulbasitkhan2733@gmail.com>
+Date:   Sun Apr 9 17:06:04 2023 +0530
+
+    Props and propsTypes
+
+[33mcommit 61cc580da9e2737dbf04c04e35d4b6143f24ad2c[m
+Author: AbdulBasit <abdulbasitkhan2733@gmail.com>
+Date:   Sat Apr 8 15:26:36 2023 +0530
+
+    Initialize project using Create React App
