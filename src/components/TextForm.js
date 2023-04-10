@@ -17,6 +17,21 @@ export default function TextForm(props) {
     setText(newText);
   }
 
+  const handleTitleCaseClick = ()=> {
+    const arr = text.split(" ");
+    for (var i = 0; i < arr.length; i++) {
+      arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+  
+  }
+  let newText = arr.join(" ");
+  setText(newText);
+  }
+
+  const handleTextClear = ()=> {
+    let newText = " ";
+    setText(newText);
+  }
+
   const [text, setText] = useState("");
   // text="new text"; // Wrong way to do it
   //setText("New Text"); // Correct way to change the state
@@ -38,6 +53,12 @@ export default function TextForm(props) {
         </button>
         <button className="button btn btn-primary mx-1" onClick={handleLowClick}>
           Convert to lowerCase
+        </button>
+        <button className="button btn btn-primary mx-1" onClick={handleTitleCaseClick}>
+          Convert to Title Case
+        </button>
+        <button className="button btn btn-primary mx-1" onClick={handleTextClear}>
+          Clear Text
         </button>
       </div>
       <div className="container my-4">
