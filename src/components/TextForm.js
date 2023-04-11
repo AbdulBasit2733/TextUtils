@@ -5,6 +5,7 @@ export default function TextForm(props) {
     //console.log("UpperCase was clicked");
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Converted to Upper case", "success");
   };
   const handleOnChange = (event) => {
     // This is for typing in textArea without it i am not able to change the text int the field
@@ -15,6 +16,7 @@ export default function TextForm(props) {
   const handleLowClick = () => {
     let newText = text.toLowerCase();
     setText(newText);
+    props.showAlert("Converted to lower case", "success");
   };
 
   const handleTitleCaseClick = () => {
@@ -24,22 +26,26 @@ export default function TextForm(props) {
     }
     let newText = arr.join(" ");
     setText(newText);
+    props.showAlert("Converted to Title case", "success");
   };
 
   const handleTextClear = () => {
     let newText = " ";
     setText(newText);
+    props.showAlert("Text has been cleared", "success");
   };
 
   const handleCopy = () => {
     var text = document.getElementById("myBox");
     text.select();
     navigator.clipboard.writeText(text.value);
+    props.showAlert("Copy to clipboard", "success");
   }
 
   const handleExtraSpaces = ()=> {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
+    props.showAlert("Extra spaces has been removed", "success");
   }
 
 
